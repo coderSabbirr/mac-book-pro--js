@@ -1,0 +1,24 @@
+ /* product images */
+.product-img img {
+ height:500px;
+ width: 500px;
+}
+
+/* order summery part */
+
+.inputflied {
+    width: 400px;
+}
+#error-show{
+    display: none;
+    font-size: 13px;
+    color: rgb(213, 0, 0);
+    position: absolute;
+}
+.under-line {
+  position:relative;
+  padding-top:15px;
+}
+.order-summery{
+    width: 400px;
+}

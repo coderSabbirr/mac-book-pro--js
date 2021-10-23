@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macbook Pro - Apple</title>
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- custom css link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="row mt-3">
+                <!-- product images -->
+                <div class="product-img col-md-5">
+                    <img src="images/mac.png" alt="">
+                </div>
+                <div class="col-md-7">
+                    <!-- product deatils section -->
+                    <h1>Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
+                    <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and
+                        16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt / USB 4 ports Magic Mouse
+                        Magic Keyboard - US English</p>
+                    <div class="py-3">
+                        <!-- memory part -->
+                        <h4 class="pb-1">Memory</h4>
+                        <button id="memory-8gb" type="button" class="btn btn-outline-secondary me-2">8GB unified memory</button>
+                        <button id="memory-16gb" type="button" class="btn btn-outline-secondary me-2">16GB unified memory</button>
+                    </div>
+                    <div class="py-4">
+                        <!-- storage part -->
+                        <h4 class="pb-1">Storage</h4>
+                        <button id="storage-256gb" type="button" class="btn btn-outline-secondary me-2">256GB SSD storage</button>
+                        <button id="storage-512gb" type="button" class="btn btn-outline-secondary me-2">512GB SSD storage</button>
+                        <button id="storage-1tb" type="button" class="btn btn-outline-secondary me-2">1TB SSD storage</button>
+                    </div>
+                    <div class="py-4">
+                        <!-- delivery part -->
+                        <h4 class="pb-1">Choose your delivery option</h4>
+                        <button id="free-delivery" type="button" class="btn btn-outline-secondary me-2">Friday,Aug 25 FREE Prime
+                            Delivery</button>
+                        <button id="fast-delivery" type="button" class="btn btn-outline-secondary me-2">Friday,Aug 21 Delivery charge
+                            $20</button>
+                    </div>
+                    <div> 
+                        <!-- order summery part -->
+                        <table class="table order-summery mt-5">
+                            <tbody >
+                              <tr>
+                                <td><h5>Best Price</h5></td>
+                                <td><h5>$<span id="best-price">1299</span></h5></td>
+                              </tr>
+                              <tr>
+                                <td><h5>Extra Memory Cost</h5></td>
+                                <td><h5>$<span id="extra-memory">0</span></h5></td>
+                              </tr>
+                              <tr>
+                                <td><h5>Extra Storage Cost</h5></td>
+                                <td><h5>$<span id="extra-storage">0</span></h5></td>
+                              </tr>
+                              <tr>
+                                <td><h5>Delivery charge</h5></td>
+                                <td><h5>$<span id="delivery-charge">0</span></h5></td>
+                              </tr>
+                              
+                              
+                            </tbody>
+                                 <tr> 
+                                    <td><h5>Total Price</h5></td>
+                                    <td><h5>$<span id="total-price">1299</span></h5></td>
+                                  </tr>
+                              </tr>
+                          </table>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <!-- promo code apply part -->
+                        <h5>Add Promo Code</h5>
+                        <div class="input-group mb-1 inputflied">
+                            <input id="promo-input" type="text" class="form-control" placeholder="Enter Promo Code"  aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <button id="apply-button" class="btn btn btn-danger" type="button" id="button-addon2">Apply</button>
+                        </div>
+                        <p id="error-show">"Sorry, this promo code is not valid. Please check for any typing errors."</p>
+                    </div>
+                </div>
+                <div class="under-line"><hr></div>
+                <!-- grand total -->
+                <div class="pe-4 text-center"><h1>Total:$<span id="grand-total">1299</span> </h1></div>
+                
+            </div>
+        </div>
+    </main>
+    <!-- custom javascript link -->
+    <script src="custom.js"></script>
+</body>
+
+</html>
